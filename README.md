@@ -54,3 +54,9 @@ docker run --rm -v $(pwd):/sisso_workspace sisso:1.0 mpirun -n 1 SISSO
 ```
 
 于是你可以在工作目录中找到输出文件SISSO.out
+
+
+其他一些注意点：
+dockerfile中采用的docker镜像源为docker.1ms.run为了在国内能够正常连接
+github源采用了bgithub.xyz
+如果这两个镜像站失效，那么需要自行替换镜像源
