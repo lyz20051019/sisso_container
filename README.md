@@ -39,7 +39,7 @@ docker run -it -v /home/lyz/sisso（你linux中存出SISSO.in的文件夹）:/si
 ```language
 mpirun -n 1 SISSO
 ```
-你可以在/home/lyz/sisso中看到结果
+你可以在/home/lyz/sisso中看到结果\
 建议的操作：
 先切换到你的工作目录，例如：
 
