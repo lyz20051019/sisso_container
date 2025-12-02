@@ -28,6 +28,34 @@ REPOSITORY                             TAG                    IMAGE ID       CRE
 ```language
 docker tag 675189be63ce(填你自己的IMAGE ID) sisso:1.0
 ```
+最建议的操作：\
+先构建完成项目，并将镜像命名为sisso:1.0\
+然后将jupyter_container下的dockerfile拷贝至例如/home/lyz/sisso/jupyter_container下，运行：
+
+```language
+docker build /home/lyz/sisso/jupyter_container
+```
+然后构建完成后以上述相同方式重命名（可命名为sisso:1.1之类的)\
+然后：
+
+```language
+docker run -d -p 8888:8888 <你的镜像名字或ID>
+docker logs <容器ID>
+```
+然后在本地浏览器中输入输出内容中的
+
+```language
+https://127.0.0.1:8888?token=389389rir9e9fie9fi
+```
+类似于这种链接
+
+
+
+
+
+
+
+
 （不建议的操作除非你是老手）
 创建容器
 
